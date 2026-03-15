@@ -13,44 +13,6 @@ Application de gestion de commandes en ligne développée en PHP pur selon le pa
 - Consulter la liste des adhérents
 - Interface d'administration des tables BDD
 
----
-
-## 🗂️ Structure du projet
-
-```
-Supermarche/
-│
-├── index.php                  ← Front Controller (point d'entrée unique)
-├── style.css                  ← Feuille de style principale
-├── Fond.jpg                   ← Image de fond
-│
-├── core/
-│   ├── Database.php           ← Singleton PDO (connexion BDD)
-│   └── Flash.php              ← Gestion des messages flash (session)
-│
-├── models/
-│   ├── AdherentModel.php      ← Données de la table `adherent`
-│   ├── CommandeModel.php      ← Création des commandes en BDD
-│   ├── FamilleModel.php       ← Données de la table `famille`
-│   ├── PanierModel.php        ← Panier en session (pas de BDD)
-│   └── ProduitModel.php       ← Données de la table `produit`
-│
-├── controllers/
-│   └── MainController.php     ← Dispatch GET/POST, appel Models + Views
-│
-└── views/
-    ├── layout.php             ← Template HTML commun (navbar, flash, container)
-    ├── accueil.php            ← Page d'accueil
-    ├── famille.php            ← Choix de la catégorie
-    ├── produit.php            ← Choix du produit
-    ├── panier.php             ← Panier d'achat
-    ├── confirmation.php       ← Confirmation de commande
-    ├── compte.php             ← Liste des adhérents
-    └── gestion.php            ← Administration BDD
-```
-
----
-
 ## ⚙️ Installation (XAMPP)
 
 ### 1. Copier le projet
